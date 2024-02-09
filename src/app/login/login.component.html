@@ -1,0 +1,13 @@
+<form #myform="ngForm">
+    <input type="text" 
+    [(ngModel)]="user"
+     name="name" placeholder="name">
+    
+    
+    <select name="role" [(ngModel)]="role" >
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+    </select>
+  
+    <button (click)="submit()">submit</button>
+</form>

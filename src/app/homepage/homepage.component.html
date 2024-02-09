@@ -1,0 +1,14 @@
+
+<p>Todo List....</p>
+<form #todoforms="ngForm">
+<input type="text" 
+name="todo-list"
+[(ngModel)]="todos"
+>
+<br/>
+
+<button (click)="addTodo()">Add</button>
+</form>
+{{todoforms.value | json}}
+{{todoSrvc.allTodo | json}}
+
